@@ -13,6 +13,7 @@ Dokumen ini mencatat backlog pengembangan, bug yang diketahui, serta riwayat per
 ---
 
 ## 📋 Backlog Fitur (Pengembangan Mendatang)
+- [ ] Pemasangan gambar barcode QRIS resmi (OVO / DANA Bisnis) menggantikan placeholder di `/pesan`.
 - [ ] Integrasi Payment Gateway resmi (Midtrans / Xendit) untuk verifikasi otomatis pembayaran QRIS & VA.
 - [ ] Migrasi penyimpanan upload media ke Cloud Storage (Vercel Blob / Cloudinary / Supabase Storage).
 - [ ] Notifikasi WhatsApp otomatis via WhatsApp Cloud API resmi atau webhook gateway.
