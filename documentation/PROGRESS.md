@@ -44,13 +44,14 @@ Posisi saat ini: **Step 4 - Deploy ke Vercel & Panduan Maintenance**
   - [x] Manajemen menu kafe di dashboard admin (`/dashboard/menu`)
   - [x] Manajemen riwayat pesanan di dashboard admin (`/dashboard/orders`)
   - [x] Dikonfirmasi pengguna
-- [ ] STEP 4 - Deploy & maintenance
+- [x] STEP 4 - Deploy & maintenance
   - [x] Persiapan build bersih (26 rute terkompilasi bebas error)
   - [x] Audit `.gitignore` (file sensitif dan local data terlindungi)
   - [x] Pembuatan log pemeliharaan (`documentation/MAINTENANCE.md`)
-  - [ ] Push ke repositori GitHub
-  - [ ] Konfigurasi Environment Variables & Deploy di Vercel
-  - [ ] Dikonfirmasi pengguna
+  - [x] Push ke repositori GitHub (`hirzailma/Cafe-Syar-i`)
+  - [x] Konfigurasi Environment Variables & Deploy di Vercel
+  - [x] Produksi live di URL: https://cafe-syar-i.vercel.app/
+  - [x] Dikonfirmasi pengguna
 
 ---
 
