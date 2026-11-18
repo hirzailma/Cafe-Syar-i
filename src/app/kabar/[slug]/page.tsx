@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { db, News } from "@/lib/db";
 import { ArrowLeft } from "lucide-react";
++import { siteConfig } from "@/config/site";
 
 export const dynamic = "force-dynamic"; // ensure fresh fetch on each request
 
@@ -26,6 +27,23 @@ export default async function ArticleDetail({ params }: { params: { slug: string
       if (list && list.length > 0) article = list[0];
     } catch (e) {
       console.error(e);
+    }
+  }
+
+  // ---- NEW FALLBACK LOGIC ----
+  // If still not found, look into static fallback articles defined in siteConfig
+  if (!article) {
+    const fallback = siteConfig.articles.find((a) => a.id === slug || a.slug === slug);
+    if (fallback) {
+      // Build a minimal News-like object
+      article = {
+        id: fallback.id,
+        title: fallback.title,
+        content: fallback.excerpt, // using excerpt as content placeholder
+        thumbnail_path: fallback.thumbnail,
+        created_at: new Date().toISOString(),
+        // other required fields can be dummy
+      } as any;
     }
   }
 
