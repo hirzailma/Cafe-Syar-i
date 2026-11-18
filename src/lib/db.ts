@@ -76,7 +76,7 @@ const DEFAULT_USERS: User[] = [
     name: "Super Admin Cafe Syari",
     email: "admin@gmail.com",
     // Bcrypt hash dari '123456'
-    password_hash: "$2b$10$lIJuRVQtg80iUlGPewB/9.cL/m2g15bkovpASGnaS6bSBo1TcbYFm",
+    password_hash: "$2b$10$xtMPgNwzmDst8ugBkyBuhulYZj1F5SnjLeLotaovkJG3zZQypGHqW",
     role_id: "role_admin_system",
     status: "active",
     created_at: new Date().toISOString(),
