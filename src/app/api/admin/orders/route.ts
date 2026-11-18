@@ -15,7 +15,18 @@ export async function GET() {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
   const orders = await db.find<Order>("Orders");
-  const sorted = [...orders].sort(
+  const formatted = orders.map((order: any) => {
+    let items = order.items;
+    if (typeof items === "string") {
+      try {
+        items = JSON.parse(items);
+      } catch {
+        items = [];
+      }
+    }
+    return { ...order, items: Array.isArray(items) ? items : [] };
+  });
+  const sorted = [...formatted].sort(
     (a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
   );
   return NextResponse.json({ success: true, data: sorted });

@@ -32,7 +32,7 @@ export async function POST(req: NextRequest) {
       order_date: new Date().toISOString(),
       visit_date,
       visit_time,
-      items,
+      items: typeof items === "object" ? JSON.stringify(items) : items,
       total_amount: Number(total_amount),
       payment_method: payment_method || "qris",
       status: "pending",

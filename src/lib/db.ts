@@ -36,8 +36,11 @@ export interface News {
   updated_at: string;
 }
 
-const APPS_SCRIPT_URL = process.env.APPS_SCRIPT_URL;
-const APPS_SCRIPT_SECRET = process.env.APPS_SCRIPT_SECRET;
+const APPS_SCRIPT_URL =
+  process.env.APPS_SCRIPT_URL ||
+  "https://script.google.com/macros/s/AKfycbyNeECuEjVaG_GpP2LUozY2y_-9-g72T64azohSUtgJOaCCBns1YahHjRHlY360PWWpqw/exec";
+const APPS_SCRIPT_SECRET =
+  process.env.APPS_SCRIPT_SECRET || "kunci_rahasia_cafe_syari_2026";
 
 // Di lingkungan serverless seperti Vercel, direktori process.cwd() bersifat READ-ONLY.
 // Gunakan os.tmpdir() saat production agar penulisan file tidak error.
