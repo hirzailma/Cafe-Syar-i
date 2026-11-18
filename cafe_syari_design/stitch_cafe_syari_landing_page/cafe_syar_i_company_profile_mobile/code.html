@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cafe Syar'i - Artisan Halal Roastery &amp; Botanical Coffee</title>
+<!-- Google Fonts: Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with Forms and Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-high": "#f3e7d1",
+            "sage-muted": "#AEAC78",
+            "secondary-container": "#e5e2aa",
+            "tertiary-fixed": "#ffdea4",
+            "on-secondary": "#ffffff",
+            "surface-variant": "#ede1cc",
+            "on-background": "#201b0e",
+            "secondary": "#626034",
+            "secondary-fixed": "#e8e5ad",
+            "primary": "#352f2b",
+            "on-tertiary-fixed": "#261900",
+            "inverse-on-surface": "#fbefd9",
+            "surface-container": "#f9edd7",
+            "on-error-container": "#93000a",
+            "cream-canvas": "#FCF0DA",
+            "on-surface-variant": "#4d4540",
+            "surface-container-low": "#fef2dc",
+            "on-tertiary-container": "#daae57",
+            "outline-variant": "#d0c4be",
+            "secondary-fixed-dim": "#cbc993",
+            "surface-bright": "#fff8f1",
+            "surface-container-highest": "#ede1cc",
+            "tertiary": "#402d00",
+            "inverse-surface": "#363021",
+            "on-primary-fixed": "#201a17",
+            "inverse-primary": "#cfc4bf",
+            "amber-honey": "#F2C46A",
+            "on-secondary-fixed-variant": "#49491e",
+            "on-tertiary-fixed-variant": "#5d4200",
+            "error": "#ba1a1a",
+            "on-surface": "#201b0e",
+            "on-secondary-container": "#666537",
+            "canvas-white": "#FFFFFF",
+            "outline": "#7f7570",
+            "error-container": "#ffdad6",
+            "primary-fixed-dim": "#cfc4bf",
+            "on-primary-fixed-variant": "#4c4541",
+            "tertiary-fixed-dim": "#edc066",
+            "primary-fixed": "#ece0db",
+            "background": "#fff8f1",
+            "surface-dim": "#e4d9c3",
+            "surface-container-lowest": "#ffffff",
+            "on-primary-container": "#bdb3ad",
+            "surface-tint": "#655d58",
+            "on-tertiary": "#ffffff",
+            "on-primary": "#ffffff",
+            "surface": "#fff8f1",
+            "primary-container": "#4c4541",
+            "on-secondary-fixed": "#1d1d00",
+            "on-error": "#ffffff",
+            "espresso-deep": "#2F2B28",
+            "tertiary-container": "#5c4200"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin-mobile": "1rem",
+            "space-lg": "1.5rem",
+            "gutter": "1.25rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-xl": "2.5rem",
+            "margin": "2rem",
+            "gutter-mobile": "0.75rem"
+          },
+          "fontFamily": {
+            "body-md": ["Plus Jakarta Sans"],
+            "display-lg": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "700" }],
+            "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      background-color: #FCF0DA;
+      color: #352f2b;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      line-height: 1;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      height: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #f3e7d1;
+      border-radius: 9999px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #AEAC78;
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+<body class="bg-cream-canvas text-primary selection:bg-amber-honey selection:text-espresso-deep">
+<!-- 1. TopNavBar (Mobile First Optimized & Desktop Seamless) -->
+<header class="sticky top-0 z-50 bg-cream-canvas/90 backdrop-blur-md shadow-sm transition-all duration-200">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin h-20 flex items-center justify-between">
+<!-- Brand & Mobile Hamburger Toggle Area -->
+<div class="flex items-center gap-3">
+<button aria-label="Buka Menu" class="md:hidden flex items-center justify-center p-2 rounded-lg text-primary hover:bg-surface-variant transition-colors" id="mobile-menu-btn">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+<a class="flex items-center gap-2.5" href="#">
+<img alt="Logo Cafe Syar'i" class="w-10 h-10 object-contain rounded-lg shadow-sm" src="https://lh3.googleusercontent.com/aida/ALJJyrDqbhHG_JJvDbQD8P2xYtwDgO99pqENWF7WfJem0ihuy9FBTkQf46sncuRY2EkcMfMLlPB_KTwB1PfIUOrEFOjYSpoWY9CKPCwb0RLOLi46m5KvUtSAdNJk6aL9WADDr2Ij7Pf8MFiq7zKcUpcHUQ_5oEhs1j0HEuGA0kQSgnE3pmyyxAbiQ3U_CvGhbX4pztQuH4DhOp6viFA8KYfek7FMLxUZYuiWTSky_YK7Ad07"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-primary tracking-tight">Cafe Syar'i</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium tracking-wide">Halal Artisan Roastery</span>
+</div>
+</a>
+</div>
+<!-- Desktop Navigation Links (Shared Component Specs) -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-secondary font-bold border-b-2 border-secondary pb-1 font-label-lg text-label-lg transition-colors duration-200" href="#home">Home</a>
+<a class="text-on-surface-variant font-medium hover:text-primary pb-1 font-label-lg text-label-lg transition-colors duration-200" href="#about">About</a>
+<a class="text-on-surface-variant font-medium hover:text-primary pb-1 font-label-lg text-label-lg transition-colors duration-200" href="#services">Services</a>
+<a class="text-on-surface-variant font-medium hover:text-primary pb-1 font-label-lg text-label-lg transition-colors duration-200" href="#news">News</a>
+<a class="text-on-surface-variant font-medium hover:text-primary pb-1 font-label-lg text-label-lg transition-colors duration-200" href="#contact">Contact</a>
+</nav>
+<!-- Trailing Action -->
+<div class="flex items-center gap-2">
+<a class="px-5 py-2 rounded-lg bg-primary text-cream-canvas font-label-lg text-label-lg font-semibold hover:bg-espresso-deep transition-all duration-200 shadow-sm flex items-center gap-1.5" href="#masuk">
+<span class="material-symbols-outlined text-lg">login</span>
+<span>Login</span>
+</a>
+</div>
+</div>
+<!-- Mobile Drawer Menu -->
+<div class="hidden md:hidden bg-cream-canvas px-margin-mobile pb-6 pt-2 border-t border-primary/10 transition-all" id="mobile-menu">
+<div class="flex flex-col gap-3 font-label-lg text-label-lg">
+<a class="px-4 py-2.5 rounded-lg bg-surface-variant text-secondary font-bold flex items-center justify-between" href="#home">
+<span>Home</span>
+<span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
+</a>
+<a class="px-4 py-2.5 rounded-lg text-primary hover:bg-surface-variant/60 font-medium transition-colors" href="#about">About</a>
+<a class="px-4 py-2.5 rounded-lg text-primary hover:bg-surface-variant/60 font-medium transition-colors" href="#services">Services</a>
+<a class="px-4 py-2.5 rounded-lg text-primary hover:bg-surface-variant/60 font-medium transition-colors" href="#news">News</a>
+<a class="px-4 py-2.5 rounded-lg text-primary hover:bg-surface-variant/60 font-medium transition-colors" href="#contact">Contact</a>
+</div>
+</div>
+</header>
+<main class="w-full">
+<!-- 2. Hero Section -->
+<section class="relative pt-6 pb-12 md:py-16 px-margin-mobile md:px-margin max-w-7xl mx-auto" id="home">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+<!-- Hero Text Content -->
+<div class="md:col-span-6 flex flex-col gap-4 text-left">
+<!-- Trust Badge Pill -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-high w-fit border border-secondary/20">
+<span class="material-symbols-outlined text-secondary text-base" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">100% Halal &amp; Thayyib Certified</span>
+</div>
+<h1 class="font-headline-lg-mobile md:font-display-lg text-headline-lg-mobile md:text-display-lg font-bold text-primary tracking-tight leading-tight">
+            Kelezatan Kopi Artisan dalam Ketenangan Syar'i
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
+            Menghadirkan pengalaman ngopi murni dengan kurasi biji kopi nusantara bersertifikasi halal, racikan botanikal alami, dan suasana teduh yang menenangkan jiwa.
+          </p>
+<!-- Stacked / Horizontal CTA Buttons -->
+<div class="flex flex-col sm:flex-row gap-3 pt-2">
+<a class="px-6 py-3.5 rounded-lg bg-amber-honey text-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 hover:brightness-95 transition-all shadow-sm" href="#services">
+<span class="material-symbols-outlined text-lg">restaurant_menu</span>
+<span>Lihat Menu</span>
+</a>
+<a class="px-6 py-3.5 rounded-lg border border-sage-muted text-secondary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 hover:bg-sage-muted/10 transition-all" href="#about">
+<span class="material-symbols-outlined text-lg">eco</span>
+<span>Tentang Kami</span>
+</a>
+</div>
+<!-- Trust Pillars / Halal Pills -->
+<div class="grid grid-cols-3 gap-2.5 pt-4 border-t border-primary/10">
+<div class="flex items-center gap-2 p-2 rounded-lg bg-canvas-white/70 border border-primary/5">
+<span class="material-symbols-outlined text-sage-muted text-xl">workspace_premium</span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">Halal MUI</span>
+</div>
+<div class="flex items-center gap-2 p-2 rounded-lg bg-canvas-white/70 border border-primary/5">
+<span class="material-symbols-outlined text-sage-muted text-xl">self_improvement</span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">Tenang &amp; Teduh</span>
+</div>
+<div class="flex items-center gap-2 p-2 rounded-lg bg-canvas-white/70 border border-primary/5">
+<span class="material-symbols-outlined text-sage-muted text-xl">local_florist</span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">Herbal Alami</span>
+</div>
+</div>
+</div>
+<!-- Hero Photo -->
+<div class="md:col-span-6 relative">
+<div class="relative overflow-hidden rounded-2xl shadow-md border border-primary/10 bg-canvas-white">
+<img class="w-full h-80 md:h-[480px] object-cover" data-alt="Interior Cafe Syar'i with warm morning sunlight streaming through large wooden frame windows, minimalist wooden bar counter, lush potted olive and fiddle-leaf fig plants, cream textured walls, and serene customers relaxing peacefully." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBInwA-GkTHsBnr1AF6ePbwJ7YuRcRCMQ-eSAGF9fZ8vneT29i1avUykSyNiw7V2T7UFaXgkIBfUEQKoV2xm4OeeUUZhRvsXJ4glXJLVewAf7ogjgePIva9cKhPJdKLzBZhC8RoQ8sV9qkQ5wcnwdz7LaCPbmE6bVlhBY8oZNMKDKIqBaxr_XuzUluCrwowFrHWqCmG0jdQgX58rtdOTSy6c2f4Ysv0P5n6sebCBEYH"/>
+<div class="absolute bottom-3 left-3 right-3 bg-canvas-white/90 backdrop-blur-md p-3.5 rounded-xl border border-primary/10 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-xl">coffee</span>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm font-bold text-primary">Single Origin Gayo</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Disangrai teliti &amp; etis tiap minggu</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-bold">Thayyib</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. About Section -->
+<section class="py-12 md:py-20 bg-surface-container-low/70 border-y border-primary/5" id="about">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+<!-- Image with Artisan Accent -->
+<div class="md:col-span-5 order-2 md:order-1 relative">
+<div class="rounded-2xl overflow-hidden shadow-sm border border-primary/10 bg-canvas-white">
+<img class="w-full h-72 md:h-96 object-cover" data-alt="Close up of a female barista pouring hot steaming water from a bronze gooseneck kettle into a V60 ceramic dripper filter on a wooden bar counter in a minimalist quiet cafe setting with warm lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6MjZsWDY5cliRvsq0Ydsj5AiH8ZEnvWKCrwW3XdfE2recS4SaIE8FrrP29YgBMPxXDb1w0NqT30YdoCTzceHpzFlOunI9rNbLTgE8aOtmFGrUkqQaxlFAOixNOLlXasfyWUow8mXJRHpd-qXUtu569w3x1Fgcjc8gg_Ojt66Cr3fo_5ZccxmVRTaU13jGoLZm0gB7N9aLlQtd1VsoFnQtLqrvqKohJ9B2CE5FOQ-0"/>
+</div>
+<div class="absolute -bottom-4 -right-2 md:bottom-4 md:-right-4 bg-espresso-deep text-cream-canvas p-4 rounded-xl shadow-lg max-w-[200px] border border-amber-honey/30">
+<p class="font-label-sm text-label-sm text-amber-honey font-bold uppercase">Prinsip Kami</p>
+<p class="font-body-sm text-body-sm mt-1 leading-snug">"Kejujuran rasa, kebersihan proses, kehangatan ukhuwah."</p>
+</div>
+</div>
+<!-- Story & 3 Value Cards -->
+<div class="md:col-span-7 order-1 md:order-2 flex flex-col gap-5">
+<div>
+<span class="font-label-md text-label-md font-bold text-secondary uppercase tracking-widest">Tentang Cafe Syar'i</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-primary mt-1">
+                Dedikasi Meracik Kopi dengan Nilai Kebaikan Murni
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">
+                Lahir dari kerinduan akan ruang santai yang bersih, jujur, dan beradab. Cafe Syar'i bukan sekadar kedai kopi, melainkan titik temu bagi penikmat kopi yang mendambakan ketenangan, higienitas maksimal, dan kehalalan dari hulu hingga ke cangkir.
+              </p>
+</div>
+<!-- 3 Value Cards with Icons -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-2">
+<div class="p-4 rounded-xl bg-canvas-white border border-primary/10 shadow-sm flex flex-col gap-2">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary text-base">Kopi Halal &amp; Thayyib</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bahan baku murni, bebas kontaminasi, diproses higienis dan etis.</p>
+</div>
+<div class="p-4 rounded-xl bg-canvas-white border border-primary/10 shadow-sm flex flex-col gap-2">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-2xl">mosque</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary text-base">Ruang Tenang &amp; Musholla</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Suasana tenang bebas bising dengan musholla bersih terpisah.</p>
+</div>
+<div class="p-4 rounded-xl bg-canvas-white border border-primary/10 shadow-sm flex flex-col gap-2">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-2xl">award_star</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary text-base">Barista Berpengalaman</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Racikan presisi dari barista tersertifikasi yang ramah dan amanah.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Services Section -->
+<section class="py-12 md:py-20 px-margin-mobile md:px-margin max-w-7xl mx-auto" id="services">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+<div>
+<span class="font-label-md text-label-md font-bold text-secondary uppercase tracking-widest">Layanan &amp; Fasilitas</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-primary mt-1">
+            Pengalaman Bersama Cafe Syar'i
+          </h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          Kami menyediakan berbagai fasilitas dan layanan untuk kebutuhan ngopi santai harian, pengadaan biji kopi, hingga ruang pertemuan formal.
+        </p>
+</div>
+<!-- Mobile Horizontal Scroll / Desktop Bento 4 Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Card 1 -->
+<div class="p-5 rounded-2xl bg-canvas-white border border-primary/10 shadow-sm hover:border-sage-muted transition-all duration-200 flex flex-col justify-between group">
+<div class="flex flex-col gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary group-hover:bg-amber-honey group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">coffee_maker</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Artisan Coffee Bar</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Espresso bar modern &amp; manual brew pour-over menggunakan biji kopi arabika pilihan dari petani lokal binaan.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-primary/5 flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-secondary">Mulai Rp 22.000</span>
+<span class="material-symbols-outlined text-secondary text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-5 rounded-2xl bg-canvas-white border border-primary/10 shadow-sm hover:border-sage-muted transition-all duration-200 flex flex-col justify-between group">
+<div class="flex flex-col gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary group-hover:bg-amber-honey group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">inventory_2</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Halal Roastery &amp; Beans</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Penjualan biji kopi freshly roasted dalam kemasan valve pack berstandar halal untuk cafe dan konsumsi rumahan.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-primary/5 flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-secondary">Tersedia Whole / Ground</span>
+<span class="material-symbols-outlined text-secondary text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-5 rounded-2xl bg-canvas-white border border-primary/10 shadow-sm hover:border-sage-muted transition-all duration-200 flex flex-col justify-between group">
+<div class="flex flex-col gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary group-hover:bg-amber-honey group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">meeting_room</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Ruang Pertemuan</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Private room tenang berkapasitas 12–25 orang dengan fasilitas proyektor, audio ramah, dan paket hidangan halal.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-primary/5 flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-secondary">Reservasi Fleksibel</span>
+<span class="material-symbols-outlined text-secondary text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="p-5 rounded-2xl bg-canvas-white border border-primary/10 shadow-sm hover:border-sage-muted transition-all duration-200 flex flex-col justify-between group">
+<div class="flex flex-col gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary group-hover:bg-amber-honey group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">school</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Workshop Kopi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Kelas edukasi barista pemula, seni seduh manual (manual brewing), dan tata kelola kedai kopi berprinsip syariah.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-primary/5 flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-secondary">Jadwal Tiap Akhir Pekan</span>
+<span class="material-symbols-outlined text-secondary text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. News / Posts Section -->
+<section class="py-12 md:py-20 bg-surface-container-low/70 border-t border-primary/5" id="news">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+<div>
+<span class="font-label-md text-label-md font-bold text-secondary uppercase tracking-widest">Kabar &amp; Artikel</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-primary mt-1">
+              Wawasan Seputar Kopi &amp; Ketenangan
+            </h2>
+</div>
+<a class="inline-flex items-center gap-1.5 text-secondary font-label-lg text-label-lg font-bold hover:text-primary transition-colors" href="#">
+<span>Lihat Semua Artikel</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+<!-- 3 Sleek Article Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Article 1 -->
+<article class="bg-canvas-white rounded-2xl overflow-hidden border border-primary/10 shadow-sm flex flex-col hover:shadow-md transition-shadow">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" data-alt="Professional coffee roaster machine in operation with roasted coffee beans discharging into the cooling tray, warm industrial cafe ambiance with coffee bean sacks." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKWnRSIVPlMMtoC7OKdNMT1Kg3RCnC4SvuA22YLq3Mck7ym2eqSMY_vFbNLKJvRaqVdFZn2WnFHTv3bY4u7DUjRt3-xlTkO4c2TKBxHKPGVIH1Gx8x_ooC-6Sanoy9hxYV7LPVPqE73QqrkvVlRjBu0f2gw_aB6TzBlAM9iEeSXH_xQhKRXDGwAsCcGjo5Sd4OHr6-sk4ZnM2UXxoK536mZIAJVWTMgyiPQ6kboKvF"/>
+<span class="absolute top-3 left-3 bg-espresso-deep/90 text-cream-canvas font-label-sm text-label-sm px-2.5 py-1 rounded-md">Edukasi Roastery</span>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">14 Oktober 2024</p>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary mt-1.5 leading-snug">
+                  Mengenal Standar Halal &amp; Thayyib dalam Penyangraian Biji Kopi Modern
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 line-clamp-2">
+                  Bagaimana Cafe Syar'i memastikan tidak ada kontaminasi rasa sintetis dan bahan terlarang selama proses roasting berlangsung.
+                </p>
+</div>
+<a class="mt-4 inline-flex items-center gap-1 font-label-md text-label-md font-bold text-secondary hover:text-primary" href="#">
+<span>Baca Selengkapnya</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+</div>
+</article>
+<!-- Article 2 -->
+<article class="bg-canvas-white rounded-2xl overflow-hidden border border-primary/10 shadow-sm flex flex-col hover:shadow-md transition-shadow">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" data-alt="Barista carefully preparing pour-over coffee using a glass server and ceramic dripper, warm steam rising, clean minimalist wooden tabletop with earthen mugs." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBVIPbdiYPQ1V1Fs-qKkIVHpW1eNKv9pm1O1-NNWarZ5mEpNEWBSb-lLKobH2N9TAePrJ8uUXajSnV8WuGBqh_mozvyhZ-uhvrumteS1v2gtaVopPxACH2HxTg1ogmNBeiZqICkXWV73DU4Zzi1sJaJGlogFa5_DVXy-HsuvNHYuyz1mFP5fsg4GTp_8zlN94Z9ESfAEAw40WBMNzeuYvkb7VfUHvLwxEOkqbhveyP"/>
+<span class="absolute top-3 left-3 bg-secondary text-cream-canvas font-label-sm text-label-sm px-2.5 py-1 rounded-md">Artisan Brewing</span>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">08 Oktober 2024</p>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary mt-1.5 leading-snug">
+                  Harmoni Kopi Botanikal: Sentuhan Kapulaga &amp; Madu Hutan Liar
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 line-clamp-2">
+                  Kisah di balik kreasi signature beverage kami yang memadukan espresso arabika dengan herba nabawi berkhasiat.
+                </p>
+</div>
+<a class="mt-4 inline-flex items-center gap-1 font-label-md text-label-md font-bold text-secondary hover:text-primary" href="#">
+<span>Baca Selengkapnya</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+</div>
+</article>
+<!-- Article 3 -->
+<article class="bg-canvas-white rounded-2xl overflow-hidden border border-primary/10 shadow-sm flex flex-col hover:shadow-md transition-shadow">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" data-alt="Interior of a tranquil coffee shop with natural warm daylight, wooden banquette seating, customers reading books, and lush indoor plants creating a peaceful atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaKvAzMp6HjN8aQ_TZxQvriPBHUjqtInMOZPSV_bV0LY5Upy20Etem9XLxBs7_96s9h-uWABQ82lWtsmjA_APCTUBJm1-2tVE-pnwXq9ay8tqE3Xv-AGJ2otkxqqXw4Ic_QamWg69B49i0xWCfw75s_LxsMztYqpMXb35t8QoUNklpzFC0BdB6s62pDXxTt9Krt__pV6wnOILnsBp0pjovv2KkDKYrW76X-ECfSD5f"/>
+<span class="absolute top-3 left-3 bg-amber-honey text-primary font-label-sm text-label-sm font-bold px-2.5 py-1 rounded-md">Keluarga &amp; Adab</span>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">29 September 2024</p>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary mt-1.5 leading-snug">
+                  Menciptakan Ruang Santai Ramah Keluarga dan Menghidupkan Adab Bertamu
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 line-clamp-2">
+                  Mengapa kami memprioritaskan ketenangan audio dan pembagian ruang yang nyaman bagi seluruh kalangan pengunjung.
+                </p>
+</div>
+<a class="mt-4 inline-flex items-center gap-1 font-label-md text-label-md font-bold text-secondary hover:text-primary" href="#">
+<span>Baca Selengkapnya</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- 6. Contact & Maps Section -->
+<section class="py-12 md:py-20 px-margin-mobile md:px-margin max-w-7xl mx-auto" id="contact">
+<div class="mb-8">
+<span class="font-label-md text-label-md font-bold text-secondary uppercase tracking-widest">Kunjungi Kami</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-primary mt-1">
+          Kontak, Lokasi &amp; Jam Operasional
+        </h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left: Information Cards & Operational Hours -->
+<div class="lg:col-span-6 flex flex-col gap-4">
+<!-- Detailed Info Card -->
+<div class="p-6 rounded-2xl bg-canvas-white border border-primary/10 shadow-sm flex flex-col gap-5">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex-shrink-0 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-primary">Alamat Roastery &amp; Cafe</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Jl. Senopati Asri No. 42, Kebayoran Baru, Jakarta Selatan, 12190
+                </p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex-shrink-0 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">chat</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-primary">WhatsApp &amp; Layanan Reservasi</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  +62 812-8899-7721 (Respons Cepat: 08.00 - 21.00 WIB)
+                </p>
+</div>
+</div>
+<!-- Jam Buka dengan Catatan Sholat Jumat Khusus -->
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex-shrink-0 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<div class="w-full">
+<h4 class="font-label-lg text-label-lg font-bold text-primary">Jam Buka</h4>
+<div class="mt-2 space-y-1.5 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex justify-between border-b border-primary/5 pb-1">
+<span>Senin – Kamis</span>
+<span class="font-semibold text-primary">07.30 – 21.30 WIB</span>
+</div>
+<div class="flex justify-between border-b border-primary/5 pb-1">
+<span>Sabtu – Ahad</span>
+<span class="font-semibold text-primary">07.00 – 22.00 WIB</span>
+</div>
+<div class="pt-1">
+<div class="flex justify-between text-secondary font-bold">
+<span>Jumat Berkah</span>
+<span>07.30 – 22.00 WIB</span>
+</div>
+<p class="font-label-sm text-label-sm text-error mt-0.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">info</span>
+                      Jeda Ibadah Shalat Jumat: Tutup pukul 11.30 – 13.00 WIB
+                    </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick WhatsApp CTA Banner -->
+<a class="p-4 rounded-xl bg-sage-muted text-cream-canvas font-bold flex items-center justify-between hover:brightness-95 transition-all shadow-sm" href="https://wa.me/6281288997721" target="_blank">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-2xl">forum</span>
+<div>
+<p class="font-label-lg text-label-lg">Konsultasi / Pemesanan Beans</p>
+<p class="font-label-sm text-label-sm font-normal opacity-90">Hubungi langsung via WhatsApp Official</p>
+</div>
+</div>
+<span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<!-- Right: Simple Contact Form & Google Maps Preview -->
+<div class="lg:col-span-6 flex flex-col gap-4">
+<!-- Simple Contact Form -->
+<div class="p-6 rounded-2xl bg-canvas-white border border-primary/10 shadow-sm">
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Kirimkan Pesan atau Pertanyaan</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 mb-4">Kami siap menjawab pertanyaan seputar kemitraan atau pemesanan acara.</p>
+<form class="space-y-3.5" onsubmit="event.preventDefault(); alert('Terima kasih, pesan Anda telah terkirim.');">
+<div>
+<label class="block font-label-sm text-label-sm font-bold text-primary mb-1">Nama Lengkap</label>
+<input class="w-full px-3.5 py-2.5 rounded-lg border border-primary/20 bg-cream-canvas/30 text-primary font-body-sm focus:border-sage-muted focus:ring-1 focus:ring-sage-muted" placeholder="Ahmad Farhan" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div>
+<label class="block font-label-sm text-label-sm font-bold text-primary mb-1">Nomor WhatsApp</label>
+<input class="w-full px-3.5 py-2.5 rounded-lg border border-primary/20 bg-cream-canvas/30 text-primary font-body-sm focus:border-sage-muted focus:ring-1 focus:ring-sage-muted" placeholder="0812xxxxxxx" required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm font-bold text-primary mb-1">Kategori Keperluan</label>
+<select class="w-full px-3.5 py-2.5 rounded-lg border border-primary/20 bg-cream-canvas/30 text-primary font-body-sm focus:border-sage-muted focus:ring-1 focus:ring-sage-muted">
+<option>Reservasi Meja / Ruangan</option>
+<option>Beli Biji Kopi (B2B Roastery)</option>
+<option>Workshop &amp; Edukasi</option>
+<option>Lainnya</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm font-bold text-primary mb-1">Pesan</label>
+<textarea class="w-full px-3.5 py-2.5 rounded-lg border border-primary/20 bg-cream-canvas/30 text-primary font-body-sm focus:border-sage-muted focus:ring-1 focus:ring-sage-muted" placeholder="Tuliskan detail kebutuhan Anda di sini..." required="" rows="3"></textarea>
+</div>
+<button class="w-full py-3 rounded-lg bg-primary text-cream-canvas font-label-lg text-label-lg font-bold hover:bg-espresso-deep transition-colors shadow-sm" type="submit">
+                Kirim Pesan Sekarang
+              </button>
+</form>
+</div>
+<!-- Maps Mobile Card -->
+<div class="p-4 rounded-2xl bg-canvas-white border border-primary/10 shadow-sm flex items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-2xl">map</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-primary">Petunjuk Arah Google Maps</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant" data-location="Jakarta">Jakarta Selatan, DKI Jakarta</p>
+</div>
+</div>
+<a class="px-4 py-2 rounded-lg bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold hover:brightness-95 flex items-center gap-1" href="https://maps.google.com" target="_blank">
+<span>Buka Rute</span>
+<span class="material-symbols-outlined text-sm">directions</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- 7. Footer (Shared Component Spec Compliant) -->
+<footer class="bg-espresso-deep text-cream-canvas border-t border-espresso-deep">
+<div class="w-full px-margin-mobile md:px-margin py-12 max-w-7xl mx-auto flex flex-col gap-8">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<!-- Brand & Description -->
+<div class="md:col-span-5 flex flex-col gap-3">
+<div class="flex items-center gap-3">
+<img alt="Logo Cafe Syar'i" class="w-10 h-10 object-contain rounded-lg brightness-110" src="https://lh3.googleusercontent.com/aida/ALJJyrDqbhHG_JJvDbQD8P2xYtwDgO99pqENWF7WfJem0ihuy9FBTkQf46sncuRY2EkcMfMLlPB_KTwB1PfIUOrEFOjYSpoWY9CKPCwb0RLOLi46m5KvUtSAdNJk6aL9WADDr2Ij7Pf8MFiq7zKcUpcHUQ_5oEhs1j0HEuGA0kQSgnE3pmyyxAbiQ3U_CvGhbX4pztQuH4DhOp6viFA8KYfek7FMLxUZYuiWTSky_YK7Ad07"/>
+<span class="text-headline-md font-headline-md font-bold text-cream-canvas tracking-tight">Cafe Syar'i</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline-variant max-w-sm mt-1">
+            Artisan Halal Roastery &amp; Botanical Coffee. Menghadirkan cangkir kopi penuh berkah, higienis, dan menyejukkan hati di tengah hiruk pikuk kota.
+          </p>
+<div class="flex items-center gap-3 pt-2">
+<a aria-label="Instagram" class="w-8 h-8 rounded-full bg-surface-container-highest/20 flex items-center justify-center text-cream-canvas hover:text-amber-honey transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">photo_camera</span>
+</a>
+<a aria-label="WhatsApp" class="w-8 h-8 rounded-full bg-surface-container-highest/20 flex items-center justify-center text-cream-canvas hover:text-amber-honey transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">call</span>
+</a>
+<a aria-label="Email" class="w-8 h-8 rounded-full bg-surface-container-highest/20 flex items-center justify-center text-cream-canvas hover:text-amber-honey transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">mail</span>
+</a>
+</div>
+</div>
+<!-- Links Grid -->
+<div class="md:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-6 font-label-md text-label-md">
+<div class="flex flex-col gap-2.5">
+<span class="font-bold text-cream-canvas uppercase tracking-wider text-xs">Eksplorasi</span>
+<a class="text-outline-variant hover:text-amber-honey transition-colors" href="#home">Home</a>
+<a class="text-outline-variant hover:text-amber-honey transition-colors" href="#about">About</a>
+<a class="text-outline-variant hover:text-amber-honey transition-colors" href="#services">Services</a>
+<a class="text-outline-variant hover:text-amber-honey transition-colors" href="#news">News</a>
+<a class="text-outline-variant hover:text-amber-honey transition-colors" href="#contact">Contact</a>
+</div>
+<div class="flex flex-col gap-2.5">
+<span class="font-bold text-cream-canvas uppercase tracking-wider text-xs">Kepatuhan</span>
+<!-- Links verbatim from JSON -->
+<a class="text-outline-variant hover:text-amber-honey transition-colors" href="#">Privacy Policy</a>
+<a class="text-amber-honey font-semibold transition-colors" href="#">Halal Compliance</a>
+<a class="text-outline-variant hover:text-amber-honey transition-colors" href="#">Terms of Service</a>
+<a class="text-outline-variant hover:text-amber-honey transition-colors" href="#">Bean Origin Guide</a>
+</div>
+<div class="flex flex-col gap-2.5 col-span-2 sm:col-span-1">
+<span class="font-bold text-cream-canvas uppercase tracking-wider text-xs">Komitmen</span>
+<p class="font-body-sm text-body-sm text-outline-variant leading-relaxed">
+              Disangrai segar tiap pekan di Jakarta Selatan dengan standar sanitasi &amp; etika syar'i penuh.
+            </p>
+</div>
+</div>
+</div>
+<!-- Copyright Bar (Verbatim from JSON) -->
+<div class="pt-6 border-t border-cream-canvas/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+<p class="font-body-sm text-body-sm text-outline-variant">
+          © 2024 Cafe Syar'i Indonesia. All rights reserved. Artisan Halal Roastery &amp; Botanical Coffee.
+        </p>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-outline-variant">
+<span class="material-symbols-outlined text-xs text-amber-honey">favorite</span>
+<span>Dibuat dengan Ukhuwah &amp; Ketulusan</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- Light Vanilla Script for Mobile Navigation Toggle -->
+<script>
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+      
+      // Auto close when link clicked
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    }
+  </script>
+</body></html>
