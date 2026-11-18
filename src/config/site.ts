@@ -10,8 +10,8 @@ export const siteConfig = {
     address: "Gg. I No.28, Banjaran, Kec. Kota, Kota Kediri, Jawa Timur 64129",
     city: "Kediri",
     province: "Jawa Timur",
-    phone: "+62 812-8900-3456",
-    whatsapp: "+62 812-8900-3456",
+    phone: "+62 819-9237-3219",
+    whatsapp: "+62 819-9237-3219",
     email: "kontak@cafesyari.id",
     googleMapsUrl: "https://maps.app.goo.gl/H8m6RnZkn4hpnxU79",
     googleMapsEmbedUrl:
@@ -25,7 +25,7 @@ export const siteConfig = {
     instagram: "https://instagram.com/cafesyari.kediri",
     youtube: "https://youtube.com/@cafesyari",
     tiktok: "https://tiktok.com/@cafesyari",
-    whatsapp: "https://wa.me/6281289003456?text=Halo%20Cafe%20Syar'i%2C%20saya%20ingin%20bertanya",
+    whatsapp: "https://wa.me/6281992373219?text=Halo%20Cafe%20Syar'i%2C%20saya%20ingin%20bertanya",
   },
   stats: [
     {

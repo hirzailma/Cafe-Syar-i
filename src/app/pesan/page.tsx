@@ -162,7 +162,7 @@ export default function PesanPage() {
   };
 
   const handleSendWA = () => {
-    const phone = "6281289003456";
+    const phone = "6281992373219";
     window.open(`https://wa.me/${phone}?text=${buildWAMessage()}`, "_blank");
   };
 

@@ -28,6 +28,9 @@ Dokumen ini mencatat backlog pengembangan, bug yang diketahui, serta riwayat per
 
 ## 📝 Riwayat Perubahan (Changelog)
 
+### [18 November 2026] - Pembaruan Nomor WhatsApp Resmi Kafe
+- **Kontak & Pemesanan:** Mengubah nomor WhatsApp tujuan notifikasi pesanan (`/pesan`) dan kontak website menjadi `081992373219` (`6281992373219`).
+
 ### [18 November 2026] - Rilis Fitur Step 3 (Pemesanan & Menu) & Persiapan Deploy Vercel (Step 4)
 - **Fitur Baru:** Halaman pemesanan interaktif 3 tahap (`/pesan`) mencakup pemilihan menu, reservasi meja, dan konfirmasi WhatsApp.
 - **Admin Dashboard:** Menambahkan modul Manajemen Menu Kafe (`/dashboard/menu`) dan Riwayat Pesanan (`/dashboard/orders`).
