@@ -1,0 +1,92 @@
+{
+  "Roles": [
+    {
+      "id": "role_admin_system",
+      "name": "admin",
+      "description": "Administrator dengan akses penuh ke sistem dan dashboard",
+      "permissions": "[\"all\"]",
+      "is_system": "true",
+      "created_at": "2026-11-16T03:46:21.389Z"
+    },
+    {
+      "id": "role_user_system",
+      "name": "user",
+      "description": "Pengguna terdaftar dengan hak akses reguler",
+      "permissions": "[\"read\",\"order\"]",
+      "is_system": "true",
+      "created_at": "2026-11-16T03:46:21.391Z"
+    }
+  ],
+  "Users": [
+    {
+      "id": "usr_admin_default",
+      "name": "Super Admin Cafe Syari",
+      "email": "admin@gmail.com",
+      "password_hash": "$2b$10$xtMPgNwzmDst8ugBkyBuhulYZj1F5SnjLeLotaovkJG3zZQypGHqW",
+      "role_id": "role_admin_system",
+      "status": "active",
+      "created_at": "2026-11-16T03:46:21.391Z",
+      "updated_at": "2026-11-16T03:46:21.391Z"
+    },
+    {
+      "name": "Pengguna Uji",
+      "email": "user_1794801058342@gmail.com",
+      "password_hash": "$2b$10$Qx8DnZ2tQeB4EcNVl4a.hOiI7swnefLutdo0RT9nxgtdYlo20Bz1m",
+      "role_id": "role_user_system",
+      "status": "active",
+      "id": "id_1794801058401_79vpvc",
+      "created_at": "2026-11-16T03:50:58.401Z",
+      "updated_at": "2026-11-16T03:50:58.401Z"
+    }
+  ],
+  "News": [
+    {
+      "id": "news_1",
+      "title": "Mengenal Karakter Single Origin Gayo: Washed vs Natural",
+      "slug": "mengenal-karakter-single-origin-gayo-washed-vs-natural",
+      "excerpt": "Pelajari perbedaan cita rasa keasaman lembut dan sweetness legit pada proses pasca panen kopi nusantara.",
+      "content": "Proses pasca panen memainkan peran krusial dalam membentuk profil rasa kopi Aceh Gayo. Proses Washed menghasilkan cangkir yang bersih dengan keasaman cerah dan aroma floral. Sedangkan proses Natural memberikan rasa manis pekat seperti buah matang (fruity notes) dan body yang tebal. Di Cafe Syar'i Kediri, kami mengkurasi kedua varian ini dengan standar kebersihan thayyib.",
+      "thumbnail_path": "/images/coffee-beans.png",
+      "status": "published",
+      "author_id": "usr_admin_default",
+      "created_at": "2026-11-16T03:46:21.391Z",
+      "updated_at": "2026-11-16T03:46:21.391Z"
+    },
+    {
+      "id": "news_2",
+      "title": "Keseruan Workshop Manual Brew Komunitas Akhir Pekan",
+      "slug": "keseruan-workshop-manual-brew-komunitas-banjaran",
+      "excerpt": "Dokumentasi sesi berbagi teknik seduh pour-over bersama barista dan penikmat kopi di kawasan Banjaran Kediri.",
+      "content": "Akhir pekan lalu, puluhan rekan komunitas berkumpul di Cafe Syar'i Banjaran untuk mendalami rasio seduhan, temperatur air, dan ukuran gilingan biji kopi lokal. Suasana hangat dan ramah keluarga membuat para peserta betah berdiskusi santai sembari menikmati seduhan kopi halal.",
+      "thumbnail_path": "/images/about-barista.png",
+      "status": "published",
+      "author_id": "usr_admin_default",
+      "created_at": "2026-11-16T03:46:21.391Z",
+      "updated_at": "2026-11-16T03:46:21.391Z"
+    },
+    {
+      "id": "news_3",
+      "title": "Konsep Kafe Ramah Keluarga & Ruang Edukasi yang Berkah",
+      "slug": "konsep-kafe-syari-ramah-keluarga-dan-kajian-ringan",
+      "excerpt": "Bagaimana Cafe Syar'i merancang ruang santun bebas asap rokok yang nyaman untuk keluarga dan anak muda berkarya.",
+      "content": "Menghadirkan kenyamanan bagi seluruh anggota keluarga adalah misi utama kami. Dengan area indoor non-smoking ber-AC, musholla yang bersih, serta spot baca buku, Cafe Syar'i menjadi tempat ideal untuk silaturahmi, belajar kelompok, maupun kajian ringan tanpa hingar-bingar kebisingan.",
+      "thumbnail_path": "/images/hero-cafe.png",
+      "status": "published",
+      "author_id": "usr_admin_default",
+      "created_at": "2026-11-16T03:46:21.391Z",
+      "updated_at": "2026-11-16T03:46:21.391Z"
+    },
+    {
+      "title": "Kopi Robusta Dampit Spesial Cafe Syari",
+      "slug": "kopi-robusta-dampit-spesial-cafe-syari-7884",
+      "excerpt": "Aroma cokelat karamel khas Jawa Timur kini hadir di bar Cafe Syari.",
+      "content": "Kami baru saja mendatangkan biji robusta pilihan dari lereng Gunung Semeru Dampit Malang. Profil roasting medium dark menghadirkan crema tebal dengan aftertaste manis yang sangat cocok dipadukan dengan susu segar.",
+      "thumbnail_path": "/images/coffee-beans.png",
+      "status": "published",
+      "author_id": "usr_admin_default",
+      "id": "id_1794801097884_vutvpc",
+      "created_at": "2026-11-16T03:51:37.884Z",
+      "updated_at": "2026-11-16T03:51:37.884Z"
+    }
+  ]
+}

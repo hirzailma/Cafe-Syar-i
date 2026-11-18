@@ -11,7 +11,7 @@ export default function About() {
           <div className="lg:col-span-5 order-2 lg:order-1 relative">
             <div className="rounded-2xl overflow-hidden shadow-md border border-[#d0c4be]/40 bg-white aspect-[4/5] relative">
               <Image
-                src="/images/about-barista.png"
+                src="/images/about-barista.webp"
                 alt="Barista Cafe Syar'i sedang menyeduh manual brew pour-over"
                 fill
                 className="object-cover"

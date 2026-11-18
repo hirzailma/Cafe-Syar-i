@@ -102,10 +102,10 @@ export default async function NewsSection() {
                 </div>
 
                 <div className="pt-3 border-t border-[#d0c4be]/20">
-                  <span className="text-[#626034] font-bold text-xs sm:text-sm inline-flex items-center gap-1 group-hover:underline">
+                  <Link href={`/kabar/${article.id}`} className="text-[#626034] font-bold text-xs sm:text-sm inline-flex items items-center gap-1 group-hover:underline">
                     Baca Selengkapnya
                     <ArrowRight className="w-3.5 h-3.5" />
-                  </span>
+                  </Link>
                 </div>
               </div>
             </article>
