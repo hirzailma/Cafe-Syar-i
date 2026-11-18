@@ -1,5 +1,7 @@
 import fs from "fs/promises";
 import path from "path";
+import os from "os";
+import { DEFAULT_MENU } from "./menu-data";
 
 export interface Role {
   id: string;
@@ -37,8 +39,16 @@ export interface News {
 const APPS_SCRIPT_URL = process.env.APPS_SCRIPT_URL;
 const APPS_SCRIPT_SECRET = process.env.APPS_SCRIPT_SECRET;
 
-// Path fallback lokal saat APPS_SCRIPT_URL belum diisi
-const LOCAL_DB_PATH = path.join(process.cwd(), "data", "local_db.json");
+// Di lingkungan serverless seperti Vercel, direktori process.cwd() bersifat READ-ONLY.
+// Gunakan os.tmpdir() saat production agar penulisan file tidak error.
+const DB_DIR =
+  process.env.NODE_ENV === "production"
+    ? os.tmpdir()
+    : path.join(process.cwd(), "data");
+const LOCAL_DB_PATH = path.join(DB_DIR, "local_db.json");
+
+// In-memory data store sebagai cadangan tercepat dan aman di serverless
+let memoryData: any = null;
 
 // Data bawaan untuk inisiasi fallback
 const DEFAULT_ROLES: Role[] = [
@@ -119,21 +129,40 @@ const DEFAULT_NEWS: News[] = [
   },
 ];
 
-async function getLocalData(): Promise<{ Roles: Role[]; Users: User[]; News: News[] }> {
+async function getLocalData(): Promise<any> {
+  if (memoryData) return memoryData;
+
   try {
     const raw = await fs.readFile(LOCAL_DB_PATH, "utf-8");
-    return JSON.parse(raw);
+    memoryData = JSON.parse(raw);
+    return memoryData;
   } catch {
-    const initial = { Roles: DEFAULT_ROLES, Users: DEFAULT_USERS, News: DEFAULT_NEWS };
-    await fs.mkdir(path.dirname(LOCAL_DB_PATH), { recursive: true });
-    await fs.writeFile(LOCAL_DB_PATH, JSON.stringify(initial, null, 2), "utf-8");
+    const initial = {
+      Roles: DEFAULT_ROLES,
+      Users: DEFAULT_USERS,
+      News: DEFAULT_NEWS,
+      Menu: DEFAULT_MENU,
+      Orders: [],
+    };
+    memoryData = initial;
+    try {
+      await fs.mkdir(path.dirname(LOCAL_DB_PATH), { recursive: true });
+      await fs.writeFile(LOCAL_DB_PATH, JSON.stringify(initial, null, 2), "utf-8");
+    } catch {
+      // Abaikan jika fs read-only di serverless, data tetap aman di memoryData
+    }
     return initial;
   }
 }
 
-async function saveLocalData(data: { Roles: Role[]; Users: User[]; News: News[] }) {
-  await fs.mkdir(path.dirname(LOCAL_DB_PATH), { recursive: true });
-  await fs.writeFile(LOCAL_DB_PATH, JSON.stringify(data, null, 2), "utf-8");
+async function saveLocalData(data: any) {
+  memoryData = data;
+  try {
+    await fs.mkdir(path.dirname(LOCAL_DB_PATH), { recursive: true });
+    await fs.writeFile(LOCAL_DB_PATH, JSON.stringify(data, null, 2), "utf-8");
+  } catch {
+    // Abaikan kegagalan penulisan disk di serverless
+  }
 }
 
 /**
