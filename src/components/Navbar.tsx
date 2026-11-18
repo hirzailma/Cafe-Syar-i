@@ -24,14 +24,16 @@ export default function Navbar() {
 
   useEffect(() => {
     // Cek status sesi pengguna
-    fetch("/api/auth/me")
+    fetch("/api/auth/me", { cache: "no-store" })
       .then((res) => res.json())
       .then((data) => {
         if (data.authenticated) {
           setAuthData({ authenticated: true, user: data.user });
+        } else {
+          setAuthData({ authenticated: false });
         }
       })
-      .catch(() => { });
+      .catch(() => {});
   }, []);
 
   const navLinks = [
