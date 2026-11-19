@@ -31,18 +31,26 @@ export default async function ArticleDetail({ params }: { params: { slug: string
   }
 
   // ---- NEW FALLBACK LOGIC ----
-  // If still not found, look into static fallback articles defined in siteConfig
+  // If still not found, look into static fallback articles defined in siteConfig.
+  // Support matching by numeric id, string id, or slug.
   if (!article) {
-    const fallback = siteConfig.articles.find((a) => a.id === slug || a.slug === slug);
+    const slugStr = String(slug);
+    const fallback = siteConfig.articles.find((a) =>
+      a.id === slugStr || a.slug === slugStr || a.id === Number(slugStr).toString()
+    );
     if (fallback) {
-      // Build a minimal News-like object
+      // Build a minimal News-like object using fallback data
       article = {
         id: fallback.id,
         title: fallback.title,
-        content: fallback.excerpt, // using excerpt as content placeholder
+        // Use excerpt as the content; in production it will be rendered as plain text.
+        content: fallback.excerpt,
         thumbnail_path: fallback.thumbnail,
-        created_at: new Date().toISOString(),
-        // other required fields can be dummy
+        // Use the provided date if available, otherwise current date.
+        created_at: fallback.date
+          ? new Date(fallback.date).toISOString()
+          : new Date().toISOString(),
+        // Additional fields can be added as needed.
       } as any;
     }
   }
