@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { db, News } from "@/lib/db";
 import { ArrowLeft } from "lucide-react";
-+import { siteConfig } from "@/config/site";
+import { siteConfig } from "@/config/site";
 
 export const dynamic = "force-dynamic"; // ensure fresh fetch on each request
 
