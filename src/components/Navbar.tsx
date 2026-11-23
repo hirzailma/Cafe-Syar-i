@@ -41,6 +41,13 @@ export default function Navbar() {
     { name: "Tentang Kami", href: "/#tentang" },
     { name: "Layanan", href: "/#layanan" },
     { name: "Kabar Kopi", href: "/#kabar" },
+    { name: "Katalog Menu", href: "/menu" },
+    { name: "Kontak", href: "/#kontak" },
+  ];
+    { name: "Beranda", href: "/#beranda" },
+    { name: "Tentang Kami", href: "/#tentang" },
+    { name: "Layanan", href: "/#layanan" },
+    { name: "Kabar Kopi", href: "/#kabar" },
     { name: "Kontak", href: "/#kontak" },
   ];
 
