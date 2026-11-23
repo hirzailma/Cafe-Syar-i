@@ -33,7 +33,7 @@ export default function Navbar() {
           setAuthData({ authenticated: false });
         }
       })
-      .catch(() => {});
+      .catch(() => { });
   }, []);
 
   const navLinks = [
@@ -44,20 +44,6 @@ export default function Navbar() {
     { name: "Katalog Menu", href: "/menu" },
     { name: "Kontak", href: "/#kontak" },
   ];
-    { name: "Beranda", href: "/#beranda" },
-    { name: "Tentang Kami", href: "/#tentang" },
-    { name: "Layanan", href: "/#layanan" },
-    { name: "Kabar Kopi", href: "/#kabar" },
-    { name: "Katalog Menu", href: "/menu" },
-    { name: "Kontak", href: "/#kontak" },
-  ];
-    { name: "Beranda", href: "/#beranda" },
-    { name: "Tentang Kami", href: "/#tentang" },
-    { name: "Layanan", href: "/#layanan" },
-    { name: "Kabar Kopi", href: "/#kabar" },
-    { name: "Kontak", href: "/#kontak" },
-  ];
-
   return (
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${scrolled
